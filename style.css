@@ -14,12 +14,9 @@ body {
   justify-content: center;
 }
 
-nav a {
+header, header a {
+  background: black;
   color: dimgray;
-}
-
-section, div, footer {
-  border: 1px solid white;
 }
 
 
@@ -39,7 +36,7 @@ section, div, footer {
   margin: 10px;
 }
 
-.mission {
+#mission {
   background-image: url("resources/imgs/mission-background.jpg");
   height:700px;
   width: 1200px;
@@ -54,23 +51,56 @@ section, div, footer {
   width: 100%;
 }
 
-.featuredtea {
+#featuredtea {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  margin: 0 auto;
+  justify-content: center;
+  margin: 60px auto;
   width: 1000px;
 }
 
-img.tea_container {
-  width: 300px;
-  height: 200px;
+.featured_text {
+  width: 1000px;
+}
+.tea {
   margin: 10px;
 }
 
-.locations {
+#locations {
+  margin: 0 auto;
+  width: 1200px;
+  height: 500px;
+  background-image: url("resources/imgs/locations-background.jpg");
+}
+
+.container_loc {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  align-content: center;
+}
+
+.location {
+  width: 300px;
+  height: 350px;
+  margin: 15px 40px;
+  background: black;
+}
+
+#locations h2 {
+  width: 100%;
+}
+
+#locations p {
+  opacity: 1;
+  padding: 15px;
+}
+
+footer {
+  height: 200px;
+}
+
+#legal {
+  text-align: left;
+  font-size: 18px;
 }
